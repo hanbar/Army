@@ -21,7 +21,7 @@ public class Main {
         List<Soldier> soldiers = List.of(knight1, knight2, archer1, archer2, rider1, rider2);
 
         System.out.println("-------REPORT--------");
-        for (Soldier soldier: soldiers) {
+        for (Soldier soldier : soldiers) {
             soldier.report();
         }
 
@@ -30,7 +30,7 @@ public class Main {
         System.out.println("-------ATTACK--------");
         for (Soldier soldier : soldiers) {
             if (soldier instanceof Offensive) {
-              ((Offensive) soldier).attack();
+                ((Offensive) soldier).attack();
             }
         }
 
