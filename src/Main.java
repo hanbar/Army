@@ -7,16 +7,18 @@ import soldier.Soldier;
 
 import java.util.List;
 
+import static soldier.Soldier.Type;
+
 public class Main {
     public static void main(String[] args) {
-        Knight knight1 = new Knight("Hector", 3);
-        Knight knight2 = new Knight("Paris", 1);
+        final Knight knight1 = new Knight("Hector", 3, Type.DEFENSIVE);
+        final Knight knight2 = new Knight("Paris", 1, Type.DEFENSIVE);
 
-        Archer archer1 = new Archer("Lucas", 3);
-        Archer archer2 = new Archer("Lucius", 2);
+        final Archer archer1 = new Archer("Lucas", 3, Type.OFFENSIVE);
+        final Archer archer2 = new Archer("Lucius", 2, Type.OFFENSIVE);
 
-        HorseRider rider1 = new HorseRider("Victorius", 3);
-        HorseRider rider2 = new HorseRider("Iáson", 2);
+        final HorseRider rider1 = new HorseRider("Victorius", 3,  Type.ADAPTABLE);
+        final HorseRider rider2 = new HorseRider("Iáson", 2, Type.ADAPTABLE);
 
         List<Soldier> soldiers = List.of(knight1, knight2, archer1, archer2, rider1, rider2);
 

@@ -3,13 +3,13 @@ package soldier;
 import behavior.Defensive;
 
 public class Knight extends Soldier implements Defensive {
-    public Knight(String name, int damage) {
-        super(name, damage);
+    public Knight(String name, int damage, Type type) {
+        super(name, damage, type);
     }
 
     @Override
     public void report() {
-        System.out.println("Soldier " + this.name + " here. Damage is " + this.damage + ", type " + TYPE);
+        System.out.println("Soldier " + this.name + " here. Damage is " + this.damage + ", type " + this.type);
     }
 
     @Override
