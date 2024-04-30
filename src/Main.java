@@ -1,13 +1,12 @@
 import behavior.Defensive;
 import behavior.Offensive;
+import behavior.Type;
 import soldier.Archer;
 import soldier.HorseRider;
 import soldier.Knight;
 import soldier.Soldier;
 
 import java.util.List;
-
-import static soldier.Soldier.Type;
 
 public class Main {
     public static void main(String[] args) {

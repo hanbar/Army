@@ -1,13 +1,11 @@
 package soldier;
 
-public abstract class Soldier {
-    protected String name;
-    protected int damage;
-    protected final Type type;
+import behavior.Type;
 
-    public enum Type {
-        ADAPTABLE, DEFENSIVE, OFFENSIVE
-    }
+public abstract class Soldier {
+    private String name;
+    private int damage;
+    private final Type type;
 
     public Soldier(String name, int damage, Type type) {
         this.name = name;
@@ -16,4 +14,16 @@ public abstract class Soldier {
     }
 
     public abstract void report();
+
+    public String getName() {
+        return name;
+    }
+
+    public int getDamage() {
+        return damage;
+    }
+
+    public Type getType() {
+        return type;
+    }
 }

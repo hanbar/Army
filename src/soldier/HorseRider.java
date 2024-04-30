@@ -1,6 +1,7 @@
 package soldier;
 
 import behavior.Adaptable;
+import behavior.Type;
 
 public class HorseRider extends Soldier implements Adaptable {
     public HorseRider(String name, int damage, Type type) {
@@ -9,15 +10,15 @@ public class HorseRider extends Soldier implements Adaptable {
 
     @Override
     public void report() {
-        System.out.println("Soldier " + this.name + " here. Damage is " + this.damage + ", type " + this.type);
+        System.out.println("Soldier " + this.getName() + " here. Damage is " + this.getDamage() + ", type " + this.getType());
     }
 
     @Override
     public void adapt() {
-        System.out.println("HorseRider " + this.name + " is adapting.");
+        System.out.println("HorseRider " + this.getName() + " is adapting.");
     }
 
     public void cutOffEnemy() {
-        System.out.println("HorseRider " + this.name + " is cutting the enemy off...");
+        System.out.println("HorseRider " + this.getName() + " is cutting the enemy off...");
     }
 }
